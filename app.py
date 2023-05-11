@@ -103,7 +103,8 @@ if __name__ == '__main__':
 	model.load_weights("model_AksaraJawa20_cnn_tf.h5")
 
 	# Run Flask di localhost 
-	app.run(host="localhost", port=5000, debug=True)
+	run_with_ngrok(app)
+	app.run()
 	
 	
 
