@@ -77,7 +77,7 @@ def apiDeteksi():
 			test_image_x       = np.array([image_array])
 			
 			# Prediksi Gambar
-			y_pred_test_single         = model.predict_proba(test_image_x)
+			y_pred_test_single         = model.predict(test_image_x)
 			y_pred_test_classes_single = np.argmax(y_pred_test_single, axis=1)
 			
 			hasil_prediksi = AksaraJawa20_classes[y_pred_test_classes_single[0]]
