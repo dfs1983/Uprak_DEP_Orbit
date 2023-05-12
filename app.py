@@ -15,7 +15,7 @@ import numpy as np
 import os
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, MaxPool2D \
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, MaxPool2D, \
 Flatten, Dense, Activation, Dropout,LeakyReLU
 from PIL import Image
 from fungsi import make_model
